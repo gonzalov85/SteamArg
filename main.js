@@ -5,7 +5,7 @@ var resultado = document.getElementById('resultado');
 form.onsubmit = function(e) {
     if (Number.isNaN(parseFloat(preciobase.value))) {
         e.preventDefault();
-        resultado.innerHTML = "Debe ingresar solo números sin símbolos"
+        resultado.innerHTML = "<span class='error'>Error: Debe ingresar solo números sin símbolos. Ej.: 250,99</span>"
     } else {
         e.preventDefault();
         preciobase.value.replace(/,/g, '.');
