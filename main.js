@@ -3,9 +3,9 @@ var preciobase = document.getElementById('preciobase');
 var calcular = document.getElementById('calcular');
 var resultado = document.getElementById('resultado');
 form.onsubmit = function(e) {
-    if (Number.isNaN(parseFloat(preciobase.value))) {
+    if (Number.isNaN(parseFloat(preciobase.value)) || parseFloat(preciobase.value) < 0 ) {
         e.preventDefault();
-        resultado.innerHTML = "<span class='error'>Error: Debe ingresar solo números sin símbolos. Ej.: 250,99</span>"
+        resultado.innerHTML = "<span class='error'>Error: Debe ingresar solo números enteros positivos sin símbolos. Ej.: 250,99</span>"
     } else {
         e.preventDefault();
         preciobase.value.replace(/,/g, '.');
