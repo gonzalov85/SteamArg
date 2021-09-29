@@ -5,6 +5,7 @@
 body{
     background: rgb(24,185,34);
     background: radial-gradient(circle, rgba(24,185,34,1) 0%, rgba(15,25,70,1) 0%, rgba(22,24,122,1) 100%, rgba(1,6,34,1) 100%);
+    width: 100%;
 }
 .title{
     color: white;
@@ -18,6 +19,7 @@ body{
     padding: 10px;
     background-color: rgb(8, 12, 22);
     align-items: center;
+    flex-wrap: wrap;
 }
 .bandera {
     width: 150px;
@@ -35,6 +37,7 @@ body{
     color: white;
     font-size: 22px;
     height: 100%;
+    width:100%;
 }
 
 h4 a{
@@ -56,6 +59,7 @@ h4 a:visited{
 
 .instructions{
     text-align: left;
+    box-sizing: border-box;
 }
 
 #preciobase {
@@ -80,9 +84,9 @@ form{
     background-color: rgba(158, 159, 255, 0.4);
     padding: 20px;
     border-radius: 15px;
-    align-items: center;
+    align-self: center;
     flex-direction: column;
-    justify-content: center;
+    box-sizing: border-box;
 
 }
 
@@ -92,12 +96,58 @@ form{
 }
 
 
-
 .buttons button{
     height: 28px;
     width: 90px;
     margin-right: 20px;
     font-size: 20px;
+}
+
+@media screen and (max-width:768px){
+    .bandera {
+        width: 90px;
+        height: 60px;
+    }
+    .steam-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .banner{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .title{
+        font-size: 18px;
+        align-self: center;
+    }
+    .info{
+        align-self: center;
+    }
+    .calculator{
+        width: 250px;
+        box-sizing: border-box;
+        align-self: center;
+    }
+    #preciobase {
+        width: 200px;
+        height: 28px;
+        font-size: 18px;
+    }
+
+    .info{
+        font-size: 18px;
+    }
+    .container{
+        width: cover;
+        padding: 20px;
+        box-sizing: border-box;
+        font-size: 18px;
+    }
+    .sweb{
+        font-size:18px;
+    }
+
 }
 
 @media screen and (max-width:500px){
@@ -111,30 +161,38 @@ form{
     }
 
     .banner{
-        width: auto;
+        width: 100%;
         box-sizing: border-box;
     }
     .title{
-        font-size: 20px;
+        font-size: 15px;
+        align-self: center;
+    }
+    .info{
         align-self: center;
     }
     .calculator{
-        width: 300px;
+        width: 250px;
         box-sizing: border-box;
+        align-self: center;
     }
     #preciobase {
         width: 200px;
         height: 28px;
-        font-size: 22px;
+        font-size: 15px;
     }
 
     .info{
-        font-size: 20px;
+        font-size: 15px;
     }
     .container{
-        width: auto;
-        padding: 5px;
+        width: cover;
+        padding: 20px;
         box-sizing: border-box;
+        font-size: 15px;
+    }
+    .sweb{
+        font-size:15px;
     }
 
 }
