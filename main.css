@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(24,185,34);
+    background: radial-gradient(circle, rgba(24,185,34,1) 0%, rgba(15,25,70,1) 0%, rgba(22,24,122,1) 100%, rgba(1,6,34,1) 100%);
+}
+.title{
+    color: white;
+    font-size: 30px;
+}
+
+.banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: rgb(8, 12, 22);
+    align-items: center;
+}
+.bandera {
+    width: 150px;
+    height: 100px;
+}
+.steam-logo {
+    width: 100px;
+    height: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+    height: 100%;
+}
+
+h4 a{
+    color: rgb(155, 255, 247);
+    font-weight: bold;
+}
+
+h4 a:visited{
+    color: rgb(155, 255, 247);
+    font-weight: bold;
+}
+.info {
+    padding: 10px;
+}
+
+.sweb{
+    font-size:24px;
+}
+
+.instructions{
+    text-align: left;
+}
+
+#preciobase {
+    width: 400px;
+    height: 28px;
+    font-size: 22px;
+}
+
+.total{
+    font-size:24px;
+    color: rgb(26, 219, 1);
+}
+
+.step{
+    color:rgb(248, 7, 248);
+}
+.calculator{
+    padding-top: 20px;
+}
+form{
+    display: flex;
+    background-color: rgba(158, 159, 255, 0.4);
+    padding: 15px;
+    border-radius: 15px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.label{
+    font-size: 20px;
+    color: aqua;
+}
+
+
+
+.buttons button{
+    height: 28px;
+    width: 90px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+@media screen and (max-width:500px){
+    .bandera {
+        width: 80px;
+        height: 50px;
+    }
+    .steam-logo {
+        width: 50px;
+        height: 50px;
+    }
+    .title{
+        font-size: 20px;
+    }
+    .banner{
+        width: 100%;
+    }
+    .calculator{
+        width: 300px;
+    }
+    #preciobase {
+        width: 200px;
+        height: 28px;
+        font-size: 22px;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+
+}

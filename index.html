@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <meta name="description" content="Calculadora de precios Steam Argentina">
+    <meta name="keywords" content="Steam, Juegos, Argentina, Precios">
+    <meta name="author" content="Villamandos Gonzalo">
+    <title>Steam Precios Argentina</title>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <img class="steam-logo" src="steam.png" alt=""><span class="title">Calcular Precio Steam Argentina</span><img class="bandera" src="argentina.png" alt="">
+        </div>
+    </header>
+    <main class="container">
+        <div class="instructions">
+            <h1 class="info">¿Cuánto sale tu juego de Steam realmente en Argentina?</h1>
+            <h3 class="info">Calcula cuánto sale tu juego con impuestos.</h3>
+            <h4 class="info"><span class="step">Paso 1:</span> Busca el precio de tu juego en <span class="sweb"><a href="https://store.steampowered.com/" target="_blank">https://store.steampowered.com/</a></span></h4>
+            <h4 class="info"><span class="step">Paso 2:</span> Ingresa el precio base de tu juego en el recuadro (solo números) y oprimí calcular</h4>
+        </div>
+        <div class="calculator">
+            <form>
+                <div class="info">
+                    <label class="label" for="preciobase">Ingrese el precio base en Pesos:</label><br>
+                    <input id="preciobase" type="text" placeholder="Precio base en Pesos">
+                </div>
+                <div class="info buttons">
+                    <button type="submit" id="calcular">Calcular</button>
+                </div>
+            </form>
+        </div>
+        <h4 class="info" id="resultado"></h4>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
