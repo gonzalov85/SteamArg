@@ -8,8 +8,10 @@ form.onsubmit = function(e) {
         resultado.innerHTML = "<span class='error'>Error: Debe ingresar solo números enteros positivos sin símbolos. Ej.: 250,99</span>"
     } else {
         e.preventDefault();
-        preciobase.value.replace(/,/g, '.');
-        let suma = (parseFloat(preciobase.value) + parseFloat(preciobase.value) *0.65).toFixed(2);
+        number = preciobase.value.replace(/,/g, '.');
+        console.log(number)
+        let suma = (parseFloat(number) + parseFloat(number) *0.65);
+        suma = suma.toFixed(2)
         suma = String(suma).replace(/\./g, ',');
         resultado.innerHTML = `<span class="step">RESULTADO:</span> El precio con impuestos será de aproximadamente <span class="total">${suma}</span> pesos.`;
         }
