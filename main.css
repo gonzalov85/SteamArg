@@ -73,12 +73,12 @@ h4 a:visited{
     color:rgb(248, 7, 248);
 }
 .calculator{
-    padding-top: 20px;
+    padding: 20px 0px;
 }
 form{
     display: flex;
     background-color: rgba(158, 159, 255, 0.4);
-    padding: 15px;
+    padding: 20px;
     border-radius: 15px;
     align-items: center;
     flex-direction: column;
@@ -109,11 +109,13 @@ form{
         width: 50px;
         height: 50px;
     }
+
+    .banner{
+        width: auto;
+    }
     .title{
         font-size: 20px;
-    }
-    .banner{
-        width: 100%;
+        align-self: center;
     }
     .calculator{
         width: 300px;
@@ -124,8 +126,8 @@ form{
         font-size: 22px;
     }
 
-    h1{
-        font-size: 28px;
+    .info{
+        font-size: 20px;
     }
 
 }
