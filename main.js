@@ -8,7 +8,7 @@ form.onsubmit = function(e) {
         resultado.innerHTML = "<span class='error'>Error: Debe ingresar solo números enteros positivos sin símbolos. Ej.: 250,99</span>"
     } else {
         e.preventDefault();
-        number = preciobase.value.replace(/,/g, '.');
+        let number = preciobase.value.replace(/,/g, '.');
         console.log(number)
         let suma = (parseFloat(number) + parseFloat(number) *0.65);
         suma = suma.toFixed(2)
