@@ -112,6 +112,7 @@ form{
 
     .banner{
         width: auto;
+        box-sizing: border-box;
     }
     .title{
         font-size: 20px;
@@ -119,6 +120,7 @@ form{
     }
     .calculator{
         width: 300px;
+        box-sizing: border-box;
     }
     #preciobase {
         width: 200px;
@@ -132,6 +134,7 @@ form{
     .container{
         width: auto;
         padding: 5px;
+        box-sizing: border-box;
     }
 
 }
